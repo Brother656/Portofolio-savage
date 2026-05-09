@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maurice Cedric — Developpeur Créatif</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Mono:wght@300;400;500&family=Outfit:wght@200;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       CURSEUR PERSONNALISÉ
+  ════════════════════════════════════════════ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- ═══════════════════════════════════════════
+       BARRE DE NAVIGATION
+  ════════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <!-- ✏️ Modifie tes initiales ici -->
+      <span class="logo-text">MC<span class="accent">.</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#accueil" class="nav-link">Accueil</a></li>
+      <li><a href="#apropos" class="nav-link">À propos de moi </a></li>
+      <li><a href="#competences" class="nav-link">Mes compétences</a></li>
+      <li><a href="#projets" class="nav-link">Mes Projets</a></li>
+      <li><a href="#contact" class="nav-link">Contacts</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Menu mobile -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#accueil" class="mob-link">Accueil</a></li>
+      <li><a href="#apropos" class="mob-link">À propos de moi</a></li>
+      <li><a href="#competences" class="mob-link">Mes Compétences</a></li>
+      <li><a href="#projets" class="mob-link">Projets</a></li>
+      <li><a href="#contact" class="mob-link">Contacts</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION HERO (ACCUEIL)
+  ════════════════════════════════════════════ -->
+  <section class="hero" id="accueil">
+    <!-- Grille de fond décorative -->
+    <div class="hero-grid"></div>
+    <!-- Orbes lumineux -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="hero-content">
+      <p class="hero-tag reveal">
+        <span class="tag-dot"></span>
+        <!-- ✏️ Modifie ton statut ici -->
+        Developpeur Créatif
+      </p>
+
+      <h1 class="hero-title reveal">
+        <!-- ✏️ Modifie ton prénom / nom ici -->
+        Bonjour, je suis<br />
+        <span class="hero-name">MAURICE CEDRIC<span class="accent">.</span></span>
+      </h1>
+
+      <p class="hero-sub reveal">
+        <!-- ✏️ Modifie ta description ici -->
+        Je suis <span class="highlight">Maurice Cedric</span> — 
+        passionné par le développement web, et le design je crée des experiences web <em>immersives et intuitives</em>.
+        mon approche combine la technique pour des sites perfomants et la creativité pour des interfaces esthétiques. Decouvrez mon portfolio pour voir mes réalisations. 
+      </p>
+
+      <div class="hero-cta reveal">
+        <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-ghost">Me contacter</a>
+      </div>
+    </div>
+
+    <!-- Bloc de code décoratif flottant -->
+    <div class="code-card reveal">
+      <div class="code-card-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="code-filename">maurice.php</span>
+      </div>
+      <pre class="code-body"><code><span class="c-kw">$dev</span> = [
+  <span class="c-str">"nom"</span>    =&gt; <span class="c-str">"Maurice Cedric"</span>,
+  <span class="c-str">"pays"</span> =&gt; <span class="c-str">"Cameroun"</span>,
+  <span class="c-str">"stack"</span>  =&gt; [<span class="c-str">"React.js"</span>, <span class="c-str">"PostgreSQL & My SQL"</span>,
+  <span class="c-str">"GitHub"</span>, <span class="c-str">"Vercel"</span>, <span class="c-str">"Capcut"</span>, <span class="c-str">"Canva"</span>, <span class="c-str">"MS Word"</span>, <span class="c-str">"Zapier"</span>],
+  <span class="c-str">"passion"</span>=&gt; <span class="c-str">"Créer & apprendre"</span>,
+];</code></pre>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-hint">
+      <span>Défiler</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION À PROPOS
+  ════════════════════════════════════════════ -->
+  <section class="section" id="apropos">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-num">01</span>
+        <span class="label-text">À propos de moi</span>
+      </div>
+
+      <div class="about-grid">
+        <!-- Photo / Avatar -->
+        <div class="about-photo-wrap reveal">
+          <div class="about-photo">
+            <!-- ✏️ Remplace "S" par une balise <img src="ta-photo.jpg" /> si tu as une photo -->
+            <img src="/ta-photo.jpg" alt="Maurice Cedric">
+          </div>
+          <div class="about-photo-deco"></div>
+        </div>
+
+        <!-- Texte -->
+<div class="about-text reveal">
+  <h2 class="section-title">
+    Fusionner le code,<br />
+    <span class="italic-serif">le design et l'efficience.</span>
+  </h2>
+
+  <!-- ✏️ Biographie optimisée pour un profil Full Stack & Créatif -->
+  <p>
+    Je suis <strong>Cedric</strong>, développeur Full Stack passionné par l'ingénierie logicielle et l'impact visuel. Mon approche ne s'arrête pas à l'écriture de code ; je conçois des solutions numériques complètes, de l'architecture complexe des bases de données <strong>MySQL</strong> à l'interface utilisateur intuitive.
+  </p>
+
+  <p>
+    Au-delà du développement, j'intègre une dimension créative et stratégique à mes projets : 
+    <strong>conception graphique</strong> (affiches, flyers), <strong>montage vidéo</strong> percutant et <strong>rédaction de newsletters</strong> engageantes. Mon objectif est de transformer votre vision en un produit digital cohérent et mémorable.
+  </p>
+
+  <p>
+    Spécialiste de l'optimisation, je déploie des <strong>automations intelligentes via Zapier</strong> pour libérer les entreprises des tâches répétitives — comme la gestion automatisée des emails ou la synchronisation de données — permettant ainsi de se concentrer sur l'essentiel : la croissance.
+  </p>
+</div>
+
+          <!-- Statistiques rapides -->
+          <div class="about-stats">
+            <!-- ✏️ Modifie tes chiffres ici -->
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Projets réalisés</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Années d'études</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">∞</span>
+              <span class="stat-label">Curiosité</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION COMPÉTENCES
+  ════════════════════════════════════════════ -->
+  <section class="section section-dark" id="competences">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-num">02</span>
+        <span class="label-text">Compétences</span>
+      </div>
+      <h2 class="section-title centered reveal">
+        Ma <span class="italic-serif">boîte à outils</span>
+      </h2>
+
+      <!-- ✏️ Ajoute / modifie tes compétences dans les cartes ci-dessous -->
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">🌐</div>
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML5 / CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Responsive Design</li>
+            <li>Fetch API</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">⚙️</div>
+          <h3>Backend</h3>
+          <ul>
+            <li>PHP 8</li>
+            <li>PDO / MySQL</li>
+            <li>Architecture MVC</li>
+            <li>API REST</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">🗄️</div>
+          <h3>Base de données</h3>
+          <ul>
+            <li>MySQL / PostgreSQL</li>
+            <li>phpMyAdmin</li>
+            <li>Modélisation BDD sur power AMC</li>
+            <li>Requêtes SQL avancées</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">🛠️</div>
+          <h3>Outils</h3>
+          <ul>
+            <li>XAMPP / Apache</li>
+            <li>Visual Studio Code</li>
+            <li>Git / GitHub</li>
+            <li>FileZilla / FTP</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION PROJETS
+  ════════════════════════════════════════════ -->
+  <section class="section" id="projets">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-num">03</span>
+        <span class="label-text">Projets</span>
+      </div>
+      <h2 class="section-title centered reveal">
+        Ce que j'ai <span class="italic-serif">construit</span>
+      </h2>
+
+      <div class="projects-grid">
+
+        <!-- ✏️ PROJET 1 — Modifie titre, description, tags, et liens -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-num">01</span>
+            <div class="project-links">
+              <a href="#" class="proj-link" title="Voir le code" aria-label="Code source">
+                <!-- Icône GitHub SVG -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="the-z-consulting.vercel.app" class="proj-link" title="Voir le projet" aria-label="Démo en ligne">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Site web pour une StartUp BTP</h3>
+          <p class="project-desc">
+Site web statique pour une mini entreprise de construction dans le domaine de genie civil, le site presente l'entreprise, ses objectifs et une section pour lancer un projet en contactant le chef via un formulaire de contact. le site est minimaliste beaux et moderne.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML/CSS</span>   
+            <span class="tag">JavaScript</span>
+            <span class="tag">API de Formspree</span>
+          </div>
+        </article>
+
+        <!-- ✏️ PROJET 2 -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-num">02</span>
+            <div class="project-links">
+              <a href="#" class="proj-link" aria-label="Code source">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="#" class="proj-link" aria-label="Démo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <!-- ✏️ Remplace par ton vrai projet -->
+          <h3 class="project-title">Un generateur de fichiers VCF</h3>
+          <p class="project-desc">
+Ceci est une plateforme tres simple que j'ai conçu pour enregistrer un grand nombre de contacts, le but ici est d'augmenter la visibilité des status whatsapp des personnes enregistrées sur la plateforme.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">PHP</span>
+          </div>
+        </article>
+
+        <!-- ✏️ PROJET 3 -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-num">03</span>
+            <div class="project-links">
+              <a href="#" class="proj-link" aria-label="Code source">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="#" class="proj-link" aria-label="Démo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <!-- ✏️ Remplace par ton vrai projet -->
+          <h3 class="project-title">Une application web de Diagnostique automobile</h3>
+          <p class="project-desc">
+Ici mon idée était de créer une plateforme permettant aux personnes ayant un vehicule automatique de connaitre l'Etat de santé de leur vehicule juste en connectant ce dernier à la plateforme par Bluetooth, ils pourront ainsi consulter la vitesse du vehicule, l'etat de vie de la batterie et la temperature du moteur.(PROJET NON ACHEVE)
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION CONTACT
+  ════════════════════════════════════════════ -->
+  <section class="section section-dark contact-section" id="contact">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-num">04</span>
+        <span class="label-text">Contact</span>
+      </div>
+
+      <div class="contact-wrap">
+        <div class="contact-left reveal">
+          <h2 class="section-title">
+            Travaillons<br />
+            <span class="italic-serif">ensemble.</span>
+          </h2>
+          <p>
+            Une idée de projet ? Une question ? N'hésite pas à me contacter, 
+            je réponds rapidement.
+          </p>
+
+          <!-- ✏️ Modifie tes liens de contact ici -->
+          <div class="contact-links">
+            <a href="mailto:brotherced656@icloud.com" class="contact-item">
+              <span class="contact-icon">✉</span>
+              <span>Mon mail</span>
+            </a>
+            <a href="https://github.com/Brother656-github" target="_blank" class="contact-item">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </span>
+              <span>Mon GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/brother-ced" target="_blank" class="contact-item">
+              <span class="contact-icon">in</span>
+              <span>Mon LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Formulaire de contact -->
+        <form class="contact-form reveal" id="contact-form" method="post" action="https://formspree.io/f/mblaezvr">
+          <div class="form-group">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Ton nom" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="ton@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Ton message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            Envoyer le message
+          </button>
+          <p class="form-feedback" id="form-feedback"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer class="footer">
+    <p>
+      <!-- ✏️ Modifie ton nom ici -->
+      Conçu &amp; développé au Cameroun avec ❤️ par <span class="accent">Maurice Cedric</span> — 
+      <span id="footer-year"></span>
+      Tous droits réservés.
+    </p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../Javascript/script.js"></script>
+</body>
+</html>
